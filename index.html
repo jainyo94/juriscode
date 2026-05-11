@@ -607,74 +607,34 @@ body::before {
       <div class="pipe-label"><strong>Verdict</strong>With IRDAI source</div>
     </div>
   </div>
+<div style="background:white;padding:30px;border-radius:8px;border:1px solid #ddd;margin-top:30px;">
 
-  <!-- UPLOAD CARDS -->
-  <div class="upload-grid">
+<h2 style="margin-bottom:15px;color:#0F1F3D;">
+IRDAI Compliance Workflow Review
+</h2>
 
-    <div class="upload-card">
-      <div class="upload-card-header">
-        <div class="upload-card-icon">📋</div>
-        <div>
-          <h3>Insurance Policy Document</h3>
-          <p>Policy schedule, terms &amp; conditions</p>
-        </div>
-      </div>
-      <div class="upload-body">
-        <div class="drop-zone" id="policyZone">
-          <input type="file" id="policyFile" accept=".pdf" onchange="fileSelected('policy')">
-          <div class="drop-icon">📂</div>
-          <div class="drop-text">Click to upload policy PDF</div>
-          <div class="drop-hint">or drag and drop here</div>
-        </div>
-        <div class="file-selected" id="policySelected">✓ &nbsp;<span id="policyName"></span></div>
-      </div>
-    </div>
+<p style="line-height:1.8;color:#333;margin-bottom:20px;">
+JurisCode Labs provides independent workflow review and legal intelligence support for Indian health insurance compliance teams.
+</p>
 
-    <div class="upload-card">
-      <div class="upload-card-header">
-        <div class="upload-card-icon">🏥</div>
-        <div>
-          <h3>Hospital Document</h3>
-          <p>Discharge summary, claim form, or diagnostic report</p>
-        </div>
-      </div>
-      <div class="upload-body">
-        <div class="drop-zone" id="hospitalZone">
-          <input type="file" id="hospitalFile" accept=".pdf" onchange="fileSelected('hospital')">
-          <div class="drop-icon">📂</div>
-          <div class="drop-text">Click to upload hospital PDF</div>
-          <div class="drop-hint">or drag and drop here</div>
-        </div>
-        <div class="file-selected" id="hospitalSelected">✓ &nbsp;<span id="hospitalName"></span></div>
-      </div>
-    </div>
+<ul style="line-height:2;color:#333;">
+<li>✔ PED clause review</li>
+<li>✔ Waiting period dispute analysis</li>
+<li>✔ Claims workflow assessment</li>
+<li>✔ IRDAI circular mapping</li>
+<li>✔ Policy wording review</li>
+<li>✔ Excel/regex-based compliance extraction</li>
+</ul>
 
-  </div>
+<div style="margin-top:25px;">
+<a href="mailto:juriscodelabs@gmail.com"
+style="background:#0F1F3D;color:white;padding:12px 20px;
+text-decoration:none;border-radius:5px;">
+Book 90-Minute Consultation
+</a>
+</div>
 
-  <!-- SUBMIT -->
-  <button class="btn-analyze" id="analyzeBtn" onclick="analyzeDocuments()">
-    <span>🔬</span>
-    <span>Analyse Documents &amp; Check Compliance</span>
-    <span>→</span>
-  </button>
-
-  <!-- ERROR -->
-  <div class="error-box" id="errorBox"></div>
-
-  <!-- LOADING -->
-  <div id="loading">
-    <div class="loading-title">Analysing Documents...</div>
-    <div class="loader-steps">
-      <div class="loader-step" id="step1"><div class="step-dot"></div>Reading PDFs and extracting text</div>
-      <div class="loader-step" id="step2"><div class="step-dot"></div>AI extracting structured facts from documents</div>
-      <div class="loader-step" id="step3"><div class="step-dot"></div>Running JurisCode rules engine</div>
-      <div class="loader-step" id="step4"><div class="step-dot"></div>Building compliance verdict</div>
-    </div>
-  </div>
-
-  <!-- RESULT -->
-  <div id="result"></div>
-
+</div>
   <!-- FOOTER -->
   <div class="footer">
     <div class="footer-left">
